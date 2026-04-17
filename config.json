@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "Projects": [".zip"],
+    "Notes": [".md"],
+    "Installers": [".exe", ".dmg"]
+  }
+}
