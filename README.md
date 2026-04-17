@@ -55,20 +55,19 @@ Downloads/
 
 ---
 
-# 📁 SOURCE CODE (`src/sfo/`)
+📁 SOURCE CODE (`src/sfo/`)
 
 ---
 
-# 📄 `src/sfo/__init__.py`
+📄 `src/sfo/__init__.py`
 
-## 🧠 Why this exists
+🧠 Why this exists
 Marks `sfo` as a Python package.
 
 Also allows future:
 - versioning
 - imports like `from sfo import ...`
 
-## ✅ Code
-
+✅ Code
 ```python
 __version__ = "1.0.0"
