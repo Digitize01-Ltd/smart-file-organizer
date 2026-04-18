@@ -1,5 +1,3 @@
-# smart-file-organizer
-
 # Smart File Organizer (SFO)
 
 A Python CLI tool that organizes messy folders into structured categories.
@@ -24,12 +22,12 @@ A Python CLI tool that organizes messy folders into structured categories.
 python main.py /path/to/folder
 ```
 
-# Dry run (safe preview)
+## Dry run (safe preview)
 ```bash
 python main.py /path/to/folder --dry-run
 ```
 
-# Example
+### Example
 Before:
 ```bash
 Downloads/
@@ -46,7 +44,7 @@ Downloads/
   Code/
 ```
 
-# Design Philosophy
+## Design Philosophy
 - Separation of concerns
 - Testable modules
 - CI/CD ready structure
@@ -73,7 +71,7 @@ Also allows future:
 __version__ = "1.0.0"
 ```
 
-# FINAL DESIGN SUMMARY
+## FINAL DESIGN SUMMARY
 
 You now have:
 
