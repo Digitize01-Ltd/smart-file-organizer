@@ -1,2 +1,7 @@
-# No external dependencies yet
-# (keeps CI/CD simple later)
+pytest
+ruff
+flake8
+black
+bandit
+pip-audit
+build

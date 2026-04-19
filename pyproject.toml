@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-file-organizer"
+version = "1.0.0"
+description = "A CLI tool that organizes files into structured folders"
+authors = [{name="SFO Dev"}]
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

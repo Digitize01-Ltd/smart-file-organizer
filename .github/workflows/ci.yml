@@ -1,0 +1,71 @@
+name: CI - Test, Lint, Security, Build Validation
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: [3.9, 3.10, 3.11]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # -------------------------
+      # FORMAT CHECK
+      # -------------------------
+      - name: Check formatting (Black)
+        run: black --check .
+
+      # -------------------------
+      # LINTING
+      # -------------------------
+      - name: Ruff Linting
+        run: ruff check .
+
+      - name: Flake8 Linting
+        run: flake8 src
+
+      # -------------------------
+      # SECURITY SCAN
+      # -------------------------
+      - name: Bandit Security Scan
+        run: bandit -r src
+
+      - name: Dependency Vulnerability Scan
+        run: pip-audit
+
+      # -------------------------
+      # TESTING
+      # -------------------------
+      - name: Run Tests
+        run: pytest -v
+
+      # -------------------------
+      # IMPORT VALIDATION
+      # -------------------------
+      - name: Import Validation
+        run: python -c "import src.sfo"
+
+      # -------------------------
+      # BUILD VALIDATION
+      # -------------------------
+      - name: Build Package
+        run: python -m build
