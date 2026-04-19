@@ -137,7 +137,7 @@ pip install pytest
 Run tests:
 ```
 pytest
-``
+```
 👉 This verifies:
 - file scanning works
 - rules work
@@ -189,6 +189,7 @@ We’ll add:
 - linting (ruff/flake8)
 - formatting checks
 - build validation
+
 
 # How trigger the release.yml workflow
 ## WHAT WILL TRIGGER IT
