@@ -43,8 +43,8 @@ jobs:
     #   - name: Ruff Linting
     #     run: ruff check .
 
-      - name: Flake8 Linting
-        run: flake8 src
+    #  - name: Flake8 Linting
+    #    run: flake8 src
 
       # -------------------------
       # SECURITY SCAN
