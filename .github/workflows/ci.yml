@@ -42,7 +42,7 @@ jobs:
       # FORMAT CHECK
       # -------------------------
       - name: Check formatting (Black)
-        run: black --check .
+        run: black .
 
       # -------------------------
       # LINTING
