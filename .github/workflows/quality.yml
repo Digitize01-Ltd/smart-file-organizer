@@ -27,8 +27,8 @@ jobs:
         run: black .
 
       # LINT
-    #  - name: Ruff Check
-    #    run: ruff check .
+      - name: Ruff Check
+        run: ruff check s.
 
     #  - name: Flake8 Check
     #    run: flake8 src
