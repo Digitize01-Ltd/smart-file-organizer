@@ -5,7 +5,7 @@ scanner correctly detects files
 CI/CD can validate file discovery logic
 """
 
-#from src.sfo.scanner import scan_files
+# from src.sfo.scanner import scan_files
 from sfo.scanner import scan_files
 import os
 
@@ -18,6 +18,7 @@ def test_scan_files(tmp_path):
 
     assert len(result) == 1
     assert result[0].endswith("test.txt")
+
 
 """
 This is a unit test for a file-scanning function, likely using pytest. It verifies that scan_files() correctly finds files in a directory. Let’s go step by step.

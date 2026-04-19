@@ -20,6 +20,7 @@ def load_config():
     except FileNotFoundError:
         return {"rules": {}}
 
+
 """
 Let’s go through this carefully, line by line, and explain both what happens and why it’s written this way. This is a small utility function for loading configuration from a JSON file.
 

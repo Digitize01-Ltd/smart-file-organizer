@@ -4,7 +4,7 @@ Ensures:
 classification logic works correctly
 """
 
-#from src.sfo.rules import get_category
+# from src.sfo.rules import get_category
 from sfo.rules import get_category
 
 
@@ -14,6 +14,7 @@ def test_get_category_image():
 
 def test_get_category_unknown():
     assert get_category("file.xyz") == "Others"
+
 
 """
 This is a small unit test file (again likely using pytest) that verifies the correctness of the get_category() function. Let’s go line by line.

@@ -10,10 +10,7 @@ __version__ = "1.0.0"
 # Public API (what users of the package are allowed to import directly)
 from .core import organize
 
-__all__ = [
-    "organize",
-    "__version__"
-]
+__all__ = ["organize", "__version__"]
 
 """
 Let’s walk through this piece of code carefully. It’s typical of a package’s __init__.py, where you define what your package exposes to users.

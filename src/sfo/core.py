@@ -39,6 +39,7 @@ def organize(path, dry_run=False):
 
     print("Organization complete.")
 
+
 """
 This is a nicely modular version of a file organizer. Instead of doing everything in one function, it delegates responsibilities to different modules (scanner, rules, mover, logger). Let’s go line by line.
 

@@ -16,14 +16,13 @@ def main():
 
     parser.add_argument("path", help="Folder path to organize")
     parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Preview changes without moving files"
+        "--dry-run", action="store_true", help="Preview changes without moving files"
     )
 
     args = parser.parse_args()
 
     organize(args.path, dry_run=args.dry_run)
+
 
 """
 Let’s go through this step by step and explain both what each line does and why it’s written that way. This is a typical CLI (command-line interface) entry function.

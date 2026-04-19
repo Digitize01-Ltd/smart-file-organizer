@@ -27,7 +27,7 @@ jobs:
         run: black .
 
       # LINT
-      - name: Ruff Check
+      - name: Ruff Checks
         run: ruff check . --fix
 
       - name: Flake8 Check

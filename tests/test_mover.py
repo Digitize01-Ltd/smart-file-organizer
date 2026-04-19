@@ -5,9 +5,10 @@ safe file moving works
 no overwrites happen
 """
 
-#from src.sfo.mover import ensure_unique_path
+# from src.sfo.mover import ensure_unique_path
 from sfo.mover import ensure_unique_path
 import os
+
 
 def test_unique_path(tmp_path):
     file = tmp_path / "file.txt"
@@ -21,6 +22,7 @@ def test_unique_path(tmp_path):
 
     assert path != str(file)
     assert "(1)" in path or path.endswith(".txt")
+
 
 """
 This is a unit test (very likely written for pytest) that checks whether ensure_unique_path() behaves correctly. Let’s go step by step.

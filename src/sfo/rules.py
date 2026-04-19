@@ -19,7 +19,7 @@ DEFAULT_RULES = {
     "Audio": [".mp3", ".wav"],
     "Documents": [".pdf", ".docx", ".txt"],
     "Archives": [".zip", ".rar", ".tar"],
-    "Code": [".py", ".js", ".ts", ".html", ".css"]
+    "Code": [".py", ".js", ".ts", ".html", ".css"],
 }
 
 
@@ -42,6 +42,7 @@ def get_category(file_path):
             return category
 
     return "Others"
+
 
 """
 Let’s go step by step through this code. This is a file classification system that decides which folder a file belongs to based on its extension, while also supporting user-defined rules from a config file.

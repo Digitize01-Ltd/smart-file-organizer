@@ -22,12 +22,13 @@ LOG_FILE = "logs/sfo.log"
 logging.basicConfig(
     filename=LOG_FILE,
     level=logging.INFO,
-    format="%(asctime)s | %(levelname)s | %(message)s"
+    format="%(asctime)s | %(levelname)s | %(message)s",
 )
 
 
 def log_action(message):
     logging.info(message)
+
 
 """
 Let’s go through this step by step. This is a simple but very common logging setup used in real applications to track what the program is doing.

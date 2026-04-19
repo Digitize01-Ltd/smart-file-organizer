@@ -22,6 +22,7 @@ def scan_files(path):
         if os.path.isfile(os.path.join(path, f))
     ]
 
+
 """
 Let’s go step by step through this function. This is a simple file scanner that lists all files in a given directory and returns their full paths.
 

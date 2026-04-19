@@ -38,6 +38,7 @@ def move_file_safe(file_path, target_dir):
 
     return safe_destination
 
+
 """
 Let’s go step by step through this code. This is a safe file-moving utility, designed to avoid overwriting existing files by automatically renaming them when needed.
 
