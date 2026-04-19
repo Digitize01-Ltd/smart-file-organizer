@@ -189,3 +189,20 @@ We’ll add:
 - linting (ruff/flake8)
 - formatting checks
 - build validation
+
+# How trigger the release.yml workflow
+## WHAT WILL TRIGGER IT
+You must create and push a version tag:
+
+STEP 1 — Create a tag
+```
+git tag v1.0.0
+```
+STEP 2 — Push the tag
+```
+git push origin v1.0.0
+```
+RESULT
+
+👉 This WILL trigger your workflow:
+CD - Release Pipeline ✅
