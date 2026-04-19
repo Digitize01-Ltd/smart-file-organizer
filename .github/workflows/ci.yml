@@ -18,12 +18,12 @@ jobs:
         python-version: [3.11, 3.12]
 
     steps:
+      - name: Debug files
+        run: ls -R
+
       - name: Install projects
         run: pip install -e .
 
-      - name: Debug files
-        run: ls -R
-        
       - name: Checkout code
         uses: actions/checkout@v4
 
