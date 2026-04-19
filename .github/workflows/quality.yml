@@ -23,8 +23,8 @@ jobs:
           pip install black ruff flake8 bandit pip-audit
 
       # FORMAT
-    #  - name: Black Format Check
-    #    run: black --check .
+      - name: Black Format Check
+        run: black --check .
 
       # LINT
     #  - name: Ruff Check
