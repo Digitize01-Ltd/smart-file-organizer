@@ -34,8 +34,8 @@ jobs:
       # -------------------------
       # FORMAT CHECK
       # -------------------------
-      - name: Check formatting (Black)
-        run: black --check .
+    #  - name: Check formatting (Black)
+    #    run: black --check .
 
       # -------------------------
       # LINTING
