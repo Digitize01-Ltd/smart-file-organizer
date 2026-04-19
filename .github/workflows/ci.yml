@@ -48,7 +48,7 @@ jobs:
       # LINTING
       # -------------------------
       - name: Ruff Linting
-        run: ruff check .
+        run: ruff check . --fix
 
     #  - name: Flake8 Linting
     #    run: flake8 src
