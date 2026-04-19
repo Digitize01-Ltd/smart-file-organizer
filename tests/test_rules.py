@@ -4,7 +4,8 @@ Ensures:
 classification logic works correctly
 """
 
-from src.sfo.rules import get_category
+#from src.sfo.rules import get_category
+from sfo.rules import get_category
 
 
 def test_get_category_image():

@@ -5,7 +5,8 @@ scanner correctly detects files
 CI/CD can validate file discovery logic
 """
 
-from src.sfo.scanner import scan_files
+#from src.sfo.scanner import scan_files
+from sfo.scanner import scan_files
 import os
 
 

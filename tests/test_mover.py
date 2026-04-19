@@ -5,7 +5,8 @@ safe file moving works
 no overwrites happen
 """
 
-from src.sfo.mover import ensure_unique_path
+#from src.sfo.mover import ensure_unique_path
+from sfo.mover import ensure_unique_path
 import os
 
 def test_unique_path(tmp_path):
