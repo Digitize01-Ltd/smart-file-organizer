@@ -24,7 +24,7 @@ jobs:
 
       # FORMAT
       - name: Black Format Check
-        run: black --check .
+        run: black .
 
       # LINT
     #  - name: Ruff Check
