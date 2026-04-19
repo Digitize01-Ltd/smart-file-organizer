@@ -21,6 +21,9 @@ jobs:
       - name: Install projects
         run: pip install -e .
 
+      - name: Debug files
+        run: ls -R
+        
       - name: Checkout code
         uses: actions/checkout@v4
 
