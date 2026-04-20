@@ -1,3 +1,5 @@
+# test, lint, validate code
+
 name: CI - Test, Lint, Security, Build Validation
 
 on:
@@ -76,3 +78,10 @@ jobs:
       # -------------------------
       - name: Build Package
         run: python -m build
+
+      - name: Run Organizer on sample folder on the runner
+        run: |
+          mkdir test_dir
+          touch test_dir/file1.txt
+          touch test_dir/image.jpg
+          python main.py test_dir

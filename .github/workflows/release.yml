@@ -1,3 +1,5 @@
+# build package + create GitHub release
+
 name: CD - Release Pipeline
 
 on:
